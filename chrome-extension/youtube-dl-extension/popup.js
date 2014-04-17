@@ -1,6 +1,6 @@
 // change me
 
-var serverScript = "http://nirvana-vpn.intelcompute.com/cgi-bin/youtube-dl.cgi";
+var serverScript = "http://www.example.com/cgi-bin/youtube-dl.cgi";
 
 // pre-populate the form with the current url
 chrome.tabs.getSelected(null,function(tab) {

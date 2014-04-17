@@ -8,7 +8,7 @@ use CGI;
 # change me
 
 use constant YOUTUBE_DL   => '/usr/local/bin/youtube-dl';
-use constant DOWNLOAD_DIR => '/home/rob/youtube-dl';
+use constant DOWNLOAD_DIR => '/home/username/youtube-dl';
 use constant PARENT_SLEEP => 1;
 
 my $url = CGI->new->param('url');
