@@ -36,4 +36,6 @@ Modify the constant lines for the location of the youtube-dl script, and the fol
 
 Sub folders are created with the datestamp.
 
+Edit popup.js in the chrome-extension folder and modify the serverScript variable to point to where you setup the CGI script.
+
 In Chrome, navigate to chrome://extensions, tick the checkbox for "Developer Mode", then click the "Load unpacked extension" button, and navigate to the chrome-extension folder in this checkout.
