@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Youtube-dl CGI Downloader",
+  "description": "Send URLs to your server hosting a CGI script to use youtube-dl.",
+  "version": "1.0",
+
+  "permissions": [
+    "http://*/*",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  }
+}
