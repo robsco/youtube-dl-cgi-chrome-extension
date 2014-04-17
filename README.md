@@ -35,7 +35,20 @@ http://rg3.github.io/youtube-dl/download.html
 
 Put the youtube-dl.cgi script on a webserver that can execute Perl CGI scripts.
 
-Note: The aim for this project was to keep everything as simple as possible, the CGI script was to have minimal dependencies, it only requires CGI.
+On RH/CentOS this is in /var/www/cgi-bin/.
+
+I can only speak for RedHat/CentOS servers with these commands to install the Apache webserer...
+
+$ yum install httpd
+$ chkconfig --level 345 on httpd on
+
+Note: The aim for this project was to keep everything as simple as possible, the CGI script is nothing special, and has minimal dependencies, it only requires CGI.
+
+For RedHat/CentOS, you may need...
+
+$ yum install perl
+$ yum install cpan
+$ cpan CGI
 
 Modify the constant lines for the location of the youtube-dl script, and the folder to store downloaded videos.
 
