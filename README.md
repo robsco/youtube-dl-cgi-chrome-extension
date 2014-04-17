@@ -10,7 +10,7 @@ youtube-dl is a tool for downloading videos from many different sites, such as Y
 
 Opening a terminal to run the script and copy the URL is a pain.
 
-Installing dubious software/toolbars, etc. is worrying.
+Installing dubious software/toolbars, etc. to download videos from websites is worrying.
 
 The Solution
 ------------
@@ -26,16 +26,20 @@ All your videos are downloaded to one central location.
 HowTo
 -----
 
-Install youtube-dl...
+Install youtube-dl on your server...
 
 http://rg3.github.io/youtube-dl/download.html
 
 Put the youtube-dl.cgi script on a webserver that can execute Perl CGI scripts.
 
+Note: The aim for this project was to keep everything as simple as possible, the CGI script was to have minimal dependencies, it only requires CGI.
+
 Modify the constant lines for the location of the youtube-dl script, and the folder to store downloaded videos.
 
-Sub folders are created with the datestamp.
+Sub-folders are created with the datestamp where the videos are actually downloaded to.
 
-Edit popup.js in the chrome-extension folder and modify the serverScript variable to point to where you setup the CGI script.
+Edit popup.js in the chrome-extension folder and modify the serverScript variable to point to your servers web address and specifically the CGI script.
 
-In Chrome, navigate to chrome://extensions, tick the checkbox for "Developer Mode", then click the "Load unpacked extension" button, and navigate to the chrome-extension folder in this checkout.
+In Chrome, navigate to chrome://extensions, tick the checkbox for "Developer Mode", then click the "Load unpacked extension" button, and navigate to the chrome-extension folder.
+
+Icon should now appear in Chrome, Opening the extension makes a call to the script and will show if anything is currently downloading on the server.
