@@ -36,6 +36,8 @@ Note: The aim for this project was to keep everything as simple as possible, the
 
 Modify the constant lines for the location of the youtube-dl script, and the folder to store downloaded videos.
 
+Make sure the user running the webserver has permission to write to the folder you create.
+
 Sub-folders are created with the datestamp where the videos are actually downloaded to.
 
 Edit popup.js in the chrome-extension folder and modify the serverScript variable to point to your servers web address and specifically the CGI script.
