@@ -22,13 +22,16 @@ The CGI scripts forks and executes the youtube-dl script.
 All your videos are downloaded to one central location.
 
 
-
 HowTo
 -----
+
+### youtube-dl
 
 Install youtube-dl on your server...
 
 http://rg3.github.io/youtube-dl/download.html
+
+### CGI Script
 
 Put the youtube-dl.cgi script on a webserver that can execute Perl CGI scripts.
 
@@ -39,6 +42,8 @@ Modify the constant lines for the location of the youtube-dl script, and the fol
 Make sure the user running the webserver has permission to write to the folder you create.
 
 Sub-folders are created with the datestamp where the videos are actually downloaded to.
+
+### Chrome Extension
 
 Edit popup.js in the chrome-extension folder and modify the serverScript variable to point to your servers web address and specifically the CGI script.
 
